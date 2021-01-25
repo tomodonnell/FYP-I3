@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- ScrollView is based on a free Android tutorial available on tutlane, url:https://www.tutlane.com/tutorial/android/android-scrollview-horizontal-vertical-with-examples-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="false">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Nesting a new linear layout, to include image inline with text, available on Stack Overflow
+        https://stackoverflow.com/questions/33638770/put-text-and-image-on-the-same-line-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true">
+
+            <TextView android:id="@+id/attractionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="Garnish Island, Cork"
+                android:textColor="@color/lightGreen"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/maplogo"/>
+
+        </LinearLayout>
+        <!--Nesting linear layout ends-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/lightGreen"/>
+
+
+        <ImageView
+            android:id="@+id/imgattraction"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:background="@color/white"
+            app:srcCompat="@drawable/garisland"/>
+
+        <TextView android:id="@+id/visitor_hd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"
+            android:text="Visitor Infomation"
+            android:textColor="@color/darkGreen"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_gravity="left"/>
+
+        <!-- Information based on content from https://en.wikipedia.org/wiki/Garnish_Island-->
+
+        <TextView android:id="@+id/txtvisitor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="Garnish Island, is an island in Glengarriff harbour, part of Bantry Bay in southwest Ireland.
+The garden, designed by Harold Peto, is renowned for its gardens and architecture. The gardens extend over 37 acres and its
+structures include a clock tower, a Grecian temple, a Matello Tower, and an Italian casita."
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_gravity="left"/>
+
+        <TextView android:id="@+id/todo_hd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="Things To Do"
+            android:textColor="@color/darkGreen"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_gravity="left"/>
+
+        <TextView android:id="@+id/txttodo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="Visitors to Garnish Island, situated in the harbour of Glengarriff in Bantry Bay, Co. Cork can view some of the
+most spectacular and beautiful scenery the country has to offer by booking a fair through one of several ferry services available.
+These affordable ferries generally include a tour of the nearby seal colony, before arriving at the famous gardens."
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_gravity="left"/>
+
+        <TextView android:id="@+id/recommend_hd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="Perfect for?"
+            android:textColor="@color/darkGreen"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_gravity="left"/>
+
+        <TextView android:id="@+id/txtrecommend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="Perfect for couples looking to spend a day out together, as well as nature-loves who
+will love the unique green gardens and animal-lovers who can pose for photos with the seal colony."
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_gravity="left"/>
+
+        <!--Directions and Google Maps, Based on youtube tutorial by Android Coding - https://www.youtube.com/watch?v=VR8RKM9LTyA&t-->
+
+        <EditText
+            android:id="@+id/txtLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your Location"
+            android:textSize="0dp"
+            android:visibility="gone"
+            android:padding="12dp"/>
+
+        <EditText
+            android:id="@+id/txtDestination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Garnish Island"
+            android:textSize="0dp"
+            android:visibility="gone"
+            android:padding="12dp"/>
+
+        <Button
+            android:id="@+id/btnDirections"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Directions"
+            android:textSize="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"/>
+
+        <TextView android:id="@+id/txtspace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="left"/>
+
+    </LinearLayout>
+</ScrollView>

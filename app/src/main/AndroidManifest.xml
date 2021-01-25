@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.recycleview">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/maplogo"
+        android:label="UndiscoveredIreland"
+        android:roundIcon="@drawable/maplogo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RecycleView.NoActionBar">
+        <activity android:name=".Attraction"></activity>
+        <activity android:name=".Cork" />
+        <activity android:name=".Munster" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".HomePage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

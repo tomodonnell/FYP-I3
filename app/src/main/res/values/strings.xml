@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">RecycleView</string>
+
+    <string-array name="provinces">
+        <item></item>
+        <item>Munster</item>
+        <item>Leinster</item>
+        <item>Connacht</item>
+        <item>Ulster</item>
+    </string-array>
+
+    <string-array name="description">
+        <item></item>
+        <item>Lovely Place</item>
+        <item>Lovely Place</item>
+        <item>Lovely Place</item>
+        <item>Lovely Place</item>
+    </string-array>
+
+    <string-array name="munster">
+        <item></item>
+        <item>Cork</item>
+        <item>Kerry</item>
+        <item>Waterford</item>
+        <item>Tipperary</item>
+        <item>Limerick</item>
+        <item>Clare</item>
+    </string-array>
+
+    <string-array name="munster_description">
+        <item></item>
+        <item>Lovely Place</item>
+        <item>Lovely Place</item>
+        <item>Lovely Place</item>
+        <item>Lovely Place</item>
+        <item>Lovely Place</item>
+        <item>Lovely Place</item>
+    </string-array>
+
+    <string-array name="cork">
+        <item></item>
+        <item>Garnish Island</item>
+        <item>Lough Hyne</item>
+        <item>Doneraile Park</item>
+    </string-array>
+
+    <string-array name="cork_description">
+        <item></item>
+        <item>Lovely Place</item>
+        <item>Lovely Place</item>
+        <item>Lovely Place</item>
+    </string-array>
+
+    <string-array name="attraction">
+        <item>Garnish Island</item>
+        <item>Lough Hyne</item>
+        <item>Doneraile Park</item>
+    </string-array>
+
+    <string-array name="visitorinfo">
+
+        <item>Garnish Island, is an island in Glengarriff harbour, part of Bantry Bay in southwest Ireland.
+The garden, designed by Harold Peto, is renowned for its gardens and architecture. The gardens extend over 37 acres and its
+structures include a clock tower, a Grecian temple, a Matello Tower, and an Italian casita.</item>
+
+        <item>Lough Hyne is a fully marine sea lough in West Cork, Ireland, about 5 km southwest of
+Skibbereen. It was designated as Irelands first Marine Nature Reserve in 1981. The lakes small size, creates an unusual
+habitat of highly oxygenated yet warm seawater that sustains an enormous variety of plants and animals.</item>
+
+        <item>The Park comprises approximately 166 hectares and is an outstanding
+example of an 18th century landscaped park in the Capability Brown style.
+Mature groves of deciduous trees, several restored water features and a number of deer herds
+can be viewed along the many pathways within the Park. The pathways are generally accessible for people with special needs.</item>
+    </string-array>
+
+    <string-array name="todoinfo">
+
+        <item>Visitors to Garnish Island, situated in the harbour of Glengarriff in Bantry Bay, Co. Cork can view some of the
+most spectacular and beautiful scenery the country has to offer by booking a fair through one of several ferry services available.
+These affordable ferries generally include a tour of the nearby seal colony, before arriving at the famous gardens.</item>
+
+        <item>Visitors can exhibition on the lough, where gain further information into its
+importance by visiting the nearby Skibbereen Heritage Centre. There are also many more sites to see, with the
+ruins of Saint Bridgits Church are on the shores of the lake, as well as holy wells, Tobarín Súl and Skour Well,
+on the side of Knockomagh Hill. Castle Island is located in the center of the lake where the ruins of Cloghan Castle,
+once a fortress of the O Driscoll clan, are still visible. A nature trail up Knockomagh Hill offers superb views of the
+lough and the surrounding area.</item>
+
+        <item>Doneraile Court, the former residence of the St. Leger family,
+is situated within the Park. It is opened to the public following completion of restoration
+works, there is a Tea Rooms onsite (open 7 days a week) and New Large Childrens Playground.
+There are a number of free guided tours throughout the year.</item>
+    </string-array>
+
+    <string-array name="recommendinfo">
+        <item>Perfect for couples looking to spend a day out together, as well as nature lovers who
+will love the unique green gardens and animal lovers who can pose for photos with the seal colony.</item>
+
+        <item>Lough Hyne is a beautiful place for visitors who like to kayak and swim.
+It is also perfect for those looking to get out for some exercise, who can embark on a lovely 7Km level walk.</item>
+
+        <item>Perfect attraction for those looking for a family day out, peaceful and pleasant for the adults,
+with a great playground for the kids as well as plenty of ducks and swans.</item>
+
+    </string-array>
+
+    <string-array name="attraction_destination">
+        <item>Garnish Island</item>
+        <item>Lough Hyne</item>
+        <item>Doneraile Park</item>
+    </string-array>
+
+</resources>
