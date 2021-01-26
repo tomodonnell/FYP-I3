@@ -4,28 +4,80 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.widget.EditText;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+    private ArrayList<Province_Item> provinceItem;
 
-    RecyclerView recyclerView;
+    private RecyclerView mRecyclerView;
+    private MyAdapter mAdapter;
+    private RecyclerView.LayoutManager mLayoutManager;
 
-    String s1[], s2[];
-    int images[] = {R.drawable.rsz_place, R.drawable.rsz_munster, R.drawable.rsz_leinster, R.drawable.rsz_connacht, R.drawable.rsz_ulster};
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        recyclerView = findViewById(R.id.recyclerView);
+        createProvinceList();
+        buildRecyclerView();
 
-        s1 = getResources().getStringArray(R.array.provinces);
-        s2 = getResources().getStringArray(R.array.description);
+        EditText editText = findViewById(R.id.edittext);
+        editText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
 
-        MyAdapter myAdapter = new MyAdapter(this, s1, s2, images);
-        recyclerView.setAdapter(myAdapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
 
+            @Override
+            public void afterTextChanged(Editable s) {
+                filter(s.toString());
+            }
+        });
+
+        }
+
+            private void filter(String text) {
+                ArrayList<Province_Item> filteredList = new ArrayList<>();
+
+                for (Province_Item item : provinceItem) {
+                    if (item.getText1().toLowerCase().startsWith(text.toLowerCase())) {
+                    filteredList.add(item);
+            }
+        }
+
+        mAdapter.filterList(filteredList);
+
+        }
+
+        private void createProvinceList() {
+            provinceItem = new ArrayList<>();
+            provinceItem.add(new Province_Item(R.drawable.rsz_place, "", ""));
+            provinceItem.add(new Province_Item(R.drawable.rsz_munster, "Munster", "Lovely Place"));
+            provinceItem.add(new Province_Item(R.drawable.rsz_leinster, "Leinster", "Lovely Place"));
+            provinceItem.add(new Province_Item(R.drawable.rsz_connacht, "Connacht", "Lovely Place"));
+            provinceItem.add(new Province_Item(R.drawable.rsz_ulster, "Ulster", "Lovely Place"));
+
+        }
+
+        private void buildRecyclerView() {
+        mRecyclerView = findViewById(R.id.recyclerView);
+        mRecyclerView.setHasFixedSize(true);
+        mLayoutManager = new LinearLayoutManager(this);
+        mAdapter = new MyAdapter(provinceItem);
+
+        mRecyclerView.setLayoutManager(mLayoutManager);
+        mRecyclerView.setAdapter(mAdapter);
     }
+
 }

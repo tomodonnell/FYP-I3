@@ -13,11 +13,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ExampleViewHolder>{
+public class MyAdapterMunster extends RecyclerView.Adapter<MyAdapterMunster.ExampleViewHolder> {
 
-    private ArrayList<Province_Item> mProvince_Item;
+    private ArrayList<Munster_Item> mMunster_Item;
 
-    public static class ExampleViewHolder extends RecyclerView.ViewHolder{
+    public static class ExampleViewHolder extends RecyclerView.ViewHolder {
 
         public ImageView mImageView;
         public TextView mTextView1;
@@ -32,18 +32,18 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ExampleViewHolder>
             mTextView2 = itemView.findViewById(R.id.myText2);
             context = itemView.getContext();
 
-            itemView.setOnClickListener(new View.OnClickListener(){
+            itemView.setOnClickListener(new View.OnClickListener() {
 
                 @Override
                 public void onClick(View v) {
                     final Intent intent;
-                    switch (getAdapterPosition()){
+                    switch (getAdapterPosition()) {
                         case 0:
-                            intent = new Intent(context, Munster.class);
+                            intent = new Intent(context, Cork.class);
                             break;
 
                         default:
-                            intent = new Intent(context, Munster.class);
+                            intent = new Intent(context, Cork.class);
                             break;
                     }
                     context.startActivity(intent);
@@ -52,22 +52,21 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ExampleViewHolder>
         }
     }
 
-    public MyAdapter(ArrayList<Province_Item> provinceitem) {
-        mProvince_Item = provinceitem;
+    public MyAdapterMunster(ArrayList<Munster_Item> munsteritem) {
+        mMunster_Item = munsteritem;
     }
 
     @NonNull
     @Override
-    public ExampleViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public MyAdapterMunster.ExampleViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.my_row, parent, false);
-        ExampleViewHolder evh = new ExampleViewHolder(v);
+        MyAdapterMunster.ExampleViewHolder evh = new ExampleViewHolder(v);
         return evh;
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ExampleViewHolder holder, int position) {
-        Province_Item currentItem = mProvince_Item.get(position);
-
+    public void onBindViewHolder(@NonNull com.example.recycleview.MyAdapterMunster.ExampleViewHolder holder, int position) {
+        Munster_Item currentItem = mMunster_Item.get(position);
         holder.mImageView.setImageResource(currentItem.getImageResource());
         holder.mTextView1.setText(currentItem.getText1());
         holder.mTextView2.setText(currentItem.getText2());
@@ -75,13 +74,14 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ExampleViewHolder>
 
     @Override
     public int getItemCount() {
-        return mProvince_Item.size();
+        return mMunster_Item.size();
     }
 
-    public void filterList(ArrayList<Province_Item> filteredList){
-        mProvince_Item = filteredList;
+    public void filterList(ArrayList<Munster_Item> filteredList) {
+        mMunster_Item = filteredList;
         notifyDataSetChanged();
-    }
 
     }
+
+}
 

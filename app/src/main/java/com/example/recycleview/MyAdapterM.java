@@ -5,15 +5,20 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class MyAdapterM extends RecyclerView.Adapter<MyAdapterM.MyViewHolder>{
+import java.util.ArrayList;
 
-    String data1[], data2[];
+public class MyAdapterM extends RecyclerView.Adapter<MyAdapterM.MyViewHolder>{
+    String data1[];
+    String data2[];
+    String[] data1F;
     int images[];
     Context context;
 
