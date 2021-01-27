@@ -22,7 +22,7 @@ public class MyAdapterAttraction extends RecyclerView.Adapter<MyAdapterAttractio
     Context context;
 
     public MyAdapterAttraction(Context ct, String s1[], String s2[], String s3[], String s4[], String s5[],
-                                int img[], Button btn1){
+                               int img[], Button btn1){
         context = ct;
         attraction = s1;
         visitor = s2;

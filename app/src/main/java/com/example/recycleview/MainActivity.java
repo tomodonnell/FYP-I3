@@ -63,10 +63,11 @@ public class MainActivity extends AppCompatActivity {
         private void createProvinceList() {
             provinceItem = new ArrayList<>();
             provinceItem.add(new Province_Item(R.drawable.rsz_place, "", ""));
-            provinceItem.add(new Province_Item(R.drawable.rsz_munster, "Munster", "Lovely Place"));
-            provinceItem.add(new Province_Item(R.drawable.rsz_leinster, "Leinster", "Lovely Place"));
-            provinceItem.add(new Province_Item(R.drawable.rsz_connacht, "Connacht", "Lovely Place"));
-            provinceItem.add(new Province_Item(R.drawable.rsz_ulster, "Ulster", "Lovely Place"));
+            provinceItem.add(new Province_Item(R.drawable.rsz_ireland, "Ireland", "Éire"));
+            provinceItem.add(new Province_Item(R.drawable.rsz_munster, "Munster", "An Mhumhain"));
+            provinceItem.add(new Province_Item(R.drawable.rsz_leinster, "Leinster", "Laighin"));
+            provinceItem.add(new Province_Item(R.drawable.rsz_connacht, "Connacht", "Connachta"));
+            provinceItem.add(new Province_Item(R.drawable.rsz_ulster, "Ulster", "Ulaidh"));
 
         }
 

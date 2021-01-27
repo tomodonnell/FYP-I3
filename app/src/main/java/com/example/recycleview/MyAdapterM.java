@@ -15,69 +15,74 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class MyAdapterM extends RecyclerView.Adapter<MyAdapterM.MyViewHolder>{
-    String data1[];
-    String data2[];
-    String[] data1F;
-    int images[];
-    Context context;
+public class MyAdapterM extends RecyclerView.Adapter<MyAdapterM.ExampleViewHolder> {
 
-    public MyAdapterM(Context ct, String s1[], String s2[], int img[]){
-        context = ct;
-        data1 = s1;
-        data2 = s2;
-        images = img;
+    private ArrayList<Cork_Item> mCork_Item;
+
+    public static class ExampleViewHolder extends RecyclerView.ViewHolder {
+
+        public ImageView mImageView;
+        public TextView mTextView1;
+        public TextView mTextView2;
+
+        private final Context context;
+
+        public ExampleViewHolder(@NonNull View itemView) {
+            super(itemView);
+            mImageView = itemView.findViewById(R.id.myImageView);
+            mTextView1 = itemView.findViewById(R.id.myText1);
+            mTextView2 = itemView.findViewById(R.id.myText2);
+            context = itemView.getContext();
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+
+                @Override
+                public void onClick(View v) {
+                    final Intent intent;
+                    switch (getAdapterPosition()) {
+                        case 0:
+                            intent = new Intent(context, Attraction.class);
+                            break;
+
+                        default:
+                            intent = new Intent(context, Attraction.class);
+                            break;
+                    }
+                    context.startActivity(intent);
+                }
+            });
+        }
+    }
+
+    public MyAdapterM(ArrayList<Cork_Item> corkitem) {
+        mCork_Item = corkitem;
     }
 
     @NonNull
     @Override
-    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        LayoutInflater inflater = LayoutInflater.from(context);
-        View view = inflater.inflate(R.layout.my_row, parent, false);
-        return new MyViewHolder(view);
+    public MyAdapterM.ExampleViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.my_row, parent, false);
+        MyAdapterM.ExampleViewHolder evh = new ExampleViewHolder(v);
+        return evh;
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        holder.myText1.setText(data1[position]);
-        holder.myText2.setText(data2[position]);
-        holder.myImage.setImageResource(images[position]);
-
-        holder.myImage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                Intent intent = new Intent(context, Cork.class);
-                context.startActivity(intent);
-            }
-        });
-
-        holder.myImage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                Intent intent = new Intent(context, Attraction.class);
-                context.startActivity(intent);
-            }
-        });
+    public void onBindViewHolder(@NonNull com.example.recycleview.MyAdapterM.ExampleViewHolder holder, int position) {
+        Cork_Item currentItem = mCork_Item.get(position);
+        holder.mImageView.setImageResource(currentItem.getImageResource());
+        holder.mTextView1.setText(currentItem.getText1());
+        holder.mTextView2.setText(currentItem.getText2());
     }
 
     @Override
     public int getItemCount() {
-        return images.length;
+        return mCork_Item.size();
     }
 
-    public class MyViewHolder extends RecyclerView.ViewHolder {
+    public void filterList(ArrayList<Cork_Item> filteredList) {
+        mCork_Item = filteredList;
+        notifyDataSetChanged();
 
-        TextView myText1, myText2;
-        ImageView myImage;
-
-        public MyViewHolder(@NonNull View itemView) {
-            super(itemView);
-            myText1 = itemView.findViewById(R.id.myText1);
-            myText2 = itemView.findViewById(R.id.myText2);
-            myImage = itemView.findViewById(R.id.myImageView);
-
-        }
     }
+
 }

@@ -42,6 +42,10 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ExampleViewHolder>
                             intent = new Intent(context, Munster.class);
                             break;
 
+                        case 1:
+                            intent = new Intent(context, Cork.class);
+                            break;
+
                         default:
                             intent = new Intent(context, Munster.class);
                             break;
