@@ -43,7 +43,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ExampleViewHolder>
                             break;
 
                         case 1:
-                            intent = new Intent(context, Cork.class);
+                            intent = new Intent(context, Attraction.class);
                             break;
 
                         default:

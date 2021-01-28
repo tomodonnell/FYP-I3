@@ -21,7 +21,7 @@
             android:layout_centerHorizontal="true"
             android:layout_centerInParent="true">
 
-            <TextView android:id="@+id/attractionTitle"
+            <TextView android:id="@+id/text1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -32,7 +32,7 @@
                 android:textStyle="bold"
                 android:layout_gravity="center"/>
 
-            <ImageView
+            <ImageView android:id="@+id/image1"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="12dp"
@@ -51,14 +51,14 @@
 
 
         <ImageView
-            android:id="@+id/imgattraction"
+            android:id="@+id/image2"
             android:layout_width="wrap_content"
             android:layout_height="200dp"
             android:scaleType="fitXY"
             android:background="@color/white"
             app:srcCompat="@drawable/garisland"/>
 
-        <TextView android:id="@+id/visitor_hd"
+        <TextView android:id="@+id/text2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -71,7 +71,7 @@
 
         <!-- Information based on content from https://en.wikipedia.org/wiki/Garnish_Island-->
 
-        <TextView android:id="@+id/txtvisitor"
+        <TextView android:id="@+id/text3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
@@ -85,7 +85,7 @@ structures include a clock tower, a Grecian temple, a Matello Tower, and an Ital
             android:textStyle="bold"
             android:layout_gravity="left"/>
 
-        <TextView android:id="@+id/todo_hd"
+        <TextView android:id="@+id/text4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -97,7 +97,7 @@ structures include a clock tower, a Grecian temple, a Matello Tower, and an Ital
             android:textStyle="bold"
             android:layout_gravity="left"/>
 
-        <TextView android:id="@+id/txttodo"
+        <TextView android:id="@+id/text5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
@@ -111,7 +111,7 @@ These affordable ferries generally include a tour of the nearby seal colony, bef
             android:textStyle="bold"
             android:layout_gravity="left"/>
 
-        <TextView android:id="@+id/recommend_hd"
+        <TextView android:id="@+id/text6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -123,7 +123,7 @@ These affordable ferries generally include a tour of the nearby seal colony, bef
             android:textStyle="bold"
             android:layout_gravity="left"/>
 
-        <TextView android:id="@+id/txtrecommend"
+        <TextView android:id="@+id/text7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
@@ -139,7 +139,7 @@ will love the unique green gardens and animal-lovers who can pose for photos wit
         <!--Directions and Google Maps, Based on youtube tutorial by Android Coding - https://www.youtube.com/watch?v=VR8RKM9LTyA&t-->
 
         <EditText
-            android:id="@+id/txtLocation"
+            android:id="@+id/edittext1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Your Location"
@@ -148,7 +148,7 @@ will love the unique green gardens and animal-lovers who can pose for photos wit
             android:padding="12dp"/>
 
         <EditText
-            android:id="@+id/txtDestination"
+            android:id="@+id/edittext2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Garnish Island"
@@ -157,7 +157,7 @@ will love the unique green gardens and animal-lovers who can pose for photos wit
             android:padding="12dp"/>
 
         <Button
-            android:id="@+id/btnDirections"
+            android:id="@+id/button1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Directions"
@@ -165,13 +165,11 @@ will love the unique green gardens and animal-lovers who can pose for photos wit
             android:layout_marginTop="16dp"
             android:layout_gravity="center"/>
 
-        <TextView android:id="@+id/txtspace"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
             android:layout_marginTop="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_gravity="left"/>
+            android:background="@color/lightGreen"/>
 
     </LinearLayout>
 </ScrollView>
