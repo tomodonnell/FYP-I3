@@ -90,7 +90,9 @@ import java.util.ArrayList;
                     public void onClick(View v) {
                         Intent myIntent = new Intent(Intent.ACTION_SEND);
                         myIntent.setType("text/plain");
-                        String shareBody = "I visited " + mTextView9.getText() + " today! It was beautiful!";
+                        String shareBody = "I visited " + mTextView9.getText() + " today! It was beautiful! " +
+                                "Check out the 'Undiscovered Ireland' app on the Google Play Store if you want to discover " +
+                                "unique areas from every county in Ireland!";
                         String shareSub = "It was really fun";
                         myIntent.putExtra(Intent.EXTRA_SUBJECT,shareSub);
                         myIntent.putExtra(Intent.EXTRA_TEXT,shareBody);
