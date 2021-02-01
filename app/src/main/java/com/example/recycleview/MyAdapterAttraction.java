@@ -34,6 +34,7 @@ import java.util.ArrayList;
             public TextView mTextView8;
             public TextView mTextView9;
             public Button mButton;
+            public Button mButton2;
 
             private final Context context;
 
@@ -51,6 +52,7 @@ import java.util.ArrayList;
                 mTextView8 = itemView.findViewById(R.id.edittext1);
                 mTextView9 = itemView.findViewById(R.id.edittext2);
                 mButton = itemView.findViewById(R.id.button1);
+                mButton2 = itemView.findViewById(R.id.button2);
                 context = itemView.getContext();
 
                 mButton.setOnClickListener(new View.OnClickListener() {
@@ -80,6 +82,19 @@ import java.util.ArrayList;
                             //Start activity
                             context.startActivity(intent);
                         }
+                    }
+                });
+
+                mButton2.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent myIntent = new Intent(Intent.ACTION_SEND);
+                        myIntent.setType("text/plain");
+                        String shareBody = "I visited " + mTextView9.getText() + " today! It was beautiful!";
+                        String shareSub = "It was really fun";
+                        myIntent.putExtra(Intent.EXTRA_SUBJECT,shareSub);
+                        myIntent.putExtra(Intent.EXTRA_TEXT,shareBody);
+                        context.startActivity(Intent.createChooser(myIntent, "Share Your Visit Using"));
                     }
                 });
 

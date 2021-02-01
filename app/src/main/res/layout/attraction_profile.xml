@@ -165,6 +165,15 @@ will love the unique green gardens and animal-lovers who can pose for photos wit
             android:layout_marginTop="16dp"
             android:layout_gravity="center"/>
 
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share Your Visit"
+            android:textSize="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"/>
+
         <View
             android:layout_width="match_parent"
             android:layout_height="3dp"
