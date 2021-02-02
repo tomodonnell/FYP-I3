@@ -15,6 +15,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
+//This Java Class helps acts as an adapter to help implement a RecyclerView, which is populated by an array list. The code is based on a series of free YouTube tutorials
+//available through the page "Coding in FLow". These lectures have been used as a basis to implement the recyclerview feature,
+//however the code has been manipulated and styled to suit my solution.
+//This is the link to the playlist of videos - https://www.youtube.com/watch?v=Nw9JF55LDzE&list=PLrnPJCHvNZuBtTYUuc5Pyo4V7xZ2HNtf4
+
 public class MyAdapterM extends RecyclerView.Adapter<MyAdapterM.ExampleViewHolder> {
 
     private ArrayList<Cork_Item> mCork_Item;

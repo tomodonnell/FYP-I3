@@ -5,6 +5,11 @@
     android:layout_marginBottom="10dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <!--Styling for Recyclerview. This Cardview will be populated from an array list and reproduce each
+    item from the array list in the same view in the same format, this code is based off a series of free
+    youtube tutorials from the "Coding in FLow" YouTube channel, the playlist of videos is linked below
+    https://www.youtube.com/watch?v=Nw9JF55LDzE&list=PLrnPJCHvNZuBtTYUuc5Pyo4V7xZ2HNtf4-->
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

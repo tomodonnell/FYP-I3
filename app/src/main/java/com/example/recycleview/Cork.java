@@ -11,6 +11,10 @@ import android.widget.EditText;
 
 import java.util.ArrayList;
 
+//This Java Class creates an array list and builds the RecyclerView, enabling the implementation the RecyclerView feature.
+//Based on "Coding in FLow" Youtube lectures, however the code has been manipulated and styled to suit my solution.
+//This is the link to the playlist of videos - https://www.youtube.com/watch?v=Nw9JF55LDzE&list=PLrnPJCHvNZuBtTYUuc5Pyo4V7xZ2HNtf4
+
 public class Cork extends AppCompatActivity {
 
     private ArrayList<Cork_Item> corkItem;
