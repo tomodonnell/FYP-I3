@@ -47,11 +47,11 @@ public class MyAdapterMunster extends RecyclerView.Adapter<MyAdapterMunster.Exam
                     final Intent intent;
                     switch (getAdapterPosition()) {
                         case 0:
-                            intent = new Intent(context, Attraction.class);
+                            intent = new Intent(context, Cork.class);
                             break;
 
                         default:
-                            intent = new Intent(context, Attraction.class);
+                            intent = new Intent(context, Cork.class);
                             break;
                     }
                     context.startActivity(intent);

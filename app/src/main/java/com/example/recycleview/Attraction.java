@@ -132,6 +132,22 @@ public class Attraction extends AppCompatActivity {
                 "Your Location",
                 "Doneraile Park"));
 
+        attractionItem.add(new Attraction_Item(R.drawable.maplogo, R.drawable.lismorecastle,
+                "Lismore Castle, Waterford",
+                "Visitor Infomation",
+                "Built as the sister castle to Ardfinnan Castle in 1185 by the Lord of Ireland, Prince John of England to guard the river crossing, " +
+                        "the castle site was originally occupied by Lismore Abbey, an important monastery and seat of learning established in the early 7th century. " +
+                        "It was still an ecclesiastical centre when King Henry II of England stayed here in 1171. It was largely re-built in the Gothic style during " +
+                        "the mid-nineteenth century for The 6th Duke of Devonshire." ,
+                "Things To Do",
+                "Although Lismore Castle itself is not open to the public, the 3 hectares of ornate and manicured gardens are well worth a visit. Thought to be the " +
+                        "oldest landscaped gardens in Ireland, they are divided into the walled Jacobean upper garden and the less formal lower garden, the latter dotted with " +
+                        "modern sculpture, including two chunks of the Berlin Wall. Highlights include a splendid yew walk, where Edmund Spenser is said to have written The Faerie Queen.",
+                "Perfect for?",
+                "Perfect for couples looking to spend a day out together, as well as nature-loves who " +
+                        "will love the unique green gardens. Also suitable for families with a park nearby for children. ",
+                "Your Location",
+                "Lismore Castle"));
 
     }
 
