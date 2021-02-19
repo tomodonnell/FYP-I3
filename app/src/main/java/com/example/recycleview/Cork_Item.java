@@ -20,8 +20,8 @@ public class Cork_Item {
 
     //Creating constructor for Attraction_Item, passing arguments into it and setting equal to variables
     public Cork_Item(int imageResource1, int imageResource2, String text1, String text2,
-                           String text3, String text4, String text5, String text6, String text7,
-                           String text8, String text9) {
+                     String text3, String text4, String text5, String text6, String text7,
+                     String text8, String text9) {
 
         mImageResource1 = imageResource1;
         mImageResource2 = imageResource2;

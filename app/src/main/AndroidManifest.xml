@@ -9,7 +9,8 @@
         android:roundIcon="@drawable/maplogo"
         android:supportsRtl="true"
         android:theme="@style/Theme.RecycleView.NoActionBar">
-        <activity android:name=".Attraction"></activity>
+        <activity android:name=".Progress"></activity>
+        <activity android:name=".Attraction" />
         <activity android:name=".Cork" />
         <activity android:name=".Munster" />
         <activity android:name=".MainActivity" />
