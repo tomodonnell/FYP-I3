@@ -85,7 +85,7 @@ public class Cork extends AppCompatActivity {
                 "Perfect for?",
                 "Perfect for couples looking to spend a day out together, as well as nature-loves who " +
                         "will love the unique green gardens and animal-lovers who can pose for photos with the seal colony.",
-                "Your Location",
+                "",
                 "Garnish Island"));
 
 
@@ -105,7 +105,7 @@ public class Cork extends AppCompatActivity {
                 "Perfect for?",
                 "Lough Hyne is a beautiful place for visitors who like to kayak and swim. " +
                         "It is also perfect for those looking to get out for some exercise, who can embark on a lovely 7Km level walk.",
-                "Your Location",
+                "",
                 "Lough Hyne"));
 
         corkItem.add(new Cork_Item(R.drawable.maplogo, R.drawable.garisland,
@@ -123,7 +123,7 @@ public class Cork extends AppCompatActivity {
                 "Perfect for?",
                 "Perfect attraction for those looking for a family day out, peaceful and pleasant for the adults,\n" +
                         "with a great playground for the kids as well as plenty of ducks and swans.",
-                "Your Location",
+                "",
                 "Doneraile Park"));
 
 

@@ -30,6 +30,8 @@ public class Progress extends AppCompatActivity {
     public TextView percent;
     public CheckBox garBox;
     public CheckBox loughBox;
+    public CheckBox donBox;
+    public CheckBox lismoreBox;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,19 +43,21 @@ public class Progress extends AppCompatActivity {
         percent = findViewById(R.id.txtpercent);
         garBox = findViewById(R.id.GarBox);
         loughBox = findViewById(R.id.LoughBox);
+        donBox = findViewById(R.id.DonBox);
+        lismoreBox = findViewById(R.id.LismoreBox);
 
 
         garBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (garBox.isChecked()) {
-                    progressStatus += 10;
+                    progressStatus += 25;
                     progressBar.setProgress(progressStatus);
                     percent.setText(progressStatus + "%");
                 }
 
                 else {
-                    progressStatus -= 10;
+                    progressStatus -= 25;
                     progressBar.setProgress(progressStatus);
                     percent.setText(progressStatus + "%");
                 }
@@ -65,13 +69,49 @@ public class Progress extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (loughBox.isChecked()) {
-                    progressStatus += 10;
+                    progressStatus += 25;
                     progressBar.setProgress(progressStatus);
                     percent.setText(progressStatus + "%");
                 }
 
                 else {
-                    progressStatus -= 10;
+                    progressStatus -= 25;
+                    progressBar.setProgress(progressStatus);
+                    percent.setText(progressStatus + "%");
+                }
+
+            }
+        });
+
+        donBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (donBox.isChecked()) {
+                    progressStatus += 25;
+                    progressBar.setProgress(progressStatus);
+                    percent.setText(progressStatus + "%");
+                }
+
+                else {
+                    progressStatus -= 25;
+                    progressBar.setProgress(progressStatus);
+                    percent.setText(progressStatus + "%");
+                }
+
+            }
+        });
+
+        lismoreBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (lismoreBox.isChecked()) {
+                    progressStatus += 25;
+                    progressBar.setProgress(progressStatus);
+                    percent.setText(progressStatus + "%");
+                }
+
+                else {
+                    progressStatus -= 25;
                     progressBar.setProgress(progressStatus);
                     percent.setText(progressStatus + "%");
                 }
