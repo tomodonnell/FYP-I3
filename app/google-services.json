@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "106148820477",
+    "project_id": "undiscovered-ireland-fyp",
+    "storage_bucket": "undiscovered-ireland-fyp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:106148820477:android:1587fae1b19f805f05d594",
+        "android_client_info": {
+          "package_name": "com.example.recycleview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "106148820477-bfbdiv2j1n1unojuhrjshud7idsfo56j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbxIdxzblek_O0v7gXLKBkOVghU6LMXa0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "106148820477-bfbdiv2j1n1unojuhrjshud7idsfo56j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

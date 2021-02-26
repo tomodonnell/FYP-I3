@@ -43,7 +43,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
-        android:text="Click on the map to explore"
+        android:text="Click on the Map to Explore"
         android:layout_marginTop="8dp"
         android:textColor="@color/lightGreen"
         app:layout_constraintEnd_toEndOf="parent"
