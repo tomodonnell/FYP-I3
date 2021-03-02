@@ -89,7 +89,7 @@ public class Cork extends AppCompatActivity {
                 "Garnish Island"));
 
 
-        corkItem.add(new Cork_Item(R.drawable.maplogo, R.drawable.garisland,
+        corkItem.add(new Cork_Item(R.drawable.maplogo, R.drawable.loughhyne,
                 "Lough Hyne, Cork",
                 "Visitor Infomation",
                 "Lough Hyne is a fully marine sea lough in West Cork, Ireland, about 5 km southwest of " +
