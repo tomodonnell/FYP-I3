@@ -13,6 +13,11 @@
         <activity android:name=".Progress"></activity>
         <activity android:name=".Attraction" />
         <activity android:name=".Cork" />
+        <activity android:name=".Waterford" />
+        <activity android:name=".Kerry" />
+        <activity android:name=".Tipperary" />
+        <activity android:name=".Limerick" />
+        <activity android:name=".Clare" />
         <activity android:name=".Munster" />
         <activity android:name=".MainActivity" />
         <activity android:name=".HomePage">

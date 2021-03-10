@@ -75,8 +75,8 @@ public class Munster extends AppCompatActivity {
         munsterItem = new ArrayList<>();
         munsterItem.add(new Munster_Item(R.drawable.rsz_place, "", ""));
         munsterItem.add(new Munster_Item(R.drawable.rsz_cork, "Cork", "Corcaigh"));
-        munsterItem.add(new Munster_Item(R.drawable.rsz_kerry, "Kerry", "Chiarraí"));
         munsterItem.add(new Munster_Item(R.drawable.rsz_waterford, "Waterford", "Port Láirge"));
+        munsterItem.add(new Munster_Item(R.drawable.rsz_kerry, "Kerry", "Chiarraí"));
         munsterItem.add(new Munster_Item(R.drawable.rsz_tipp, "Tipperary", "Thiobraid Árann"));
         munsterItem.add(new Munster_Item(R.drawable.rsz_limerick, "Limerick", "Luimneach"));
         munsterItem.add(new Munster_Item(R.drawable.rsz_clare, "Clare", "Chláir"));

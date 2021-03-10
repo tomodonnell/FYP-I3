@@ -47,15 +47,19 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ExampleViewHolder>
                     final Intent intent;
                     switch (getAdapterPosition()) {
                         case 0:
-                            intent = new Intent(context, Munster.class);
+                            intent = new Intent(context, Attraction.class);
                             break;
 
                         case 1:
                             intent = new Intent(context, Attraction.class);
                             break;
 
-                        default:
+                        case 2:
                             intent = new Intent(context, Munster.class);
+                            break;
+
+                        default:
+                            intent = new Intent(context, Attraction.class);
                             break;
                     }
                     context.startActivity(intent);

@@ -3,6 +3,7 @@ package com.example.recycleview;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -132,6 +133,7 @@ public class Progress extends AppCompatActivity {
             public void onClick(View v) {
                 saveData();
                 Toast.makeText(getBaseContext(), "Your Progress has been Updated!" , Toast.LENGTH_SHORT ).show();
+                moveBackHome();
             }
         });
 
@@ -607,6 +609,11 @@ public class Progress extends AppCompatActivity {
     protected void onStop() {
         super.onStop();
         saveData();
+    }
+
+    private void moveBackHome(){
+        Intent intent = new Intent (Progress.this, HomePage. class);
+        startActivity(intent);
     }
 }
 

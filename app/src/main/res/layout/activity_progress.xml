@@ -115,7 +115,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
                 android:layout_marginLeft="5dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginRight="10dp"
                 android:text="Garnish Island"
@@ -146,7 +146,7 @@
                 android:scaleY="2"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.918"
+                app:layout_constraintHorizontal_bias="0.999"
                 app:layout_constraintStart_toStartOf="@+id/GarImage"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="MissingConstraints" />
@@ -220,7 +220,7 @@
                 android:scaleY="2"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.918"
+                app:layout_constraintHorizontal_bias="0.999"
                 app:layout_constraintStart_toStartOf="@+id/LoughImage"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="MissingConstraints" />
@@ -294,7 +294,7 @@
                     android:scaleY="2"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.918"
+                    app:layout_constraintHorizontal_bias="0.999"
                     app:layout_constraintStart_toStartOf="@+id/DonImage"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="MissingConstraints" />
@@ -341,7 +341,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="10dp"
                     android:layout_marginRight="10dp"
-                    android:text="Ballycotton Cliff"
+                    android:text="Ballycotton Cliff Walk"
                     android:textSize="22dp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -369,7 +369,7 @@
                     android:scaleY="2"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.918"
+                    app:layout_constraintHorizontal_bias="0.999"
                     app:layout_constraintStart_toStartOf="@+id/BallycottonImage"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="MissingConstraints" />
@@ -443,7 +443,7 @@
                 android:scaleY="2"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.918"
+                app:layout_constraintHorizontal_bias="0.999"
                 app:layout_constraintStart_toStartOf="@+id/LismoreImage"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="MissingConstraints" />
@@ -517,7 +517,7 @@
                     android:scaleY="2"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.918"
+                    app:layout_constraintHorizontal_bias="0.999"
                     app:layout_constraintStart_toStartOf="@+id/BunmahonImage"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="MissingConstraints" />
@@ -592,7 +592,7 @@
                     android:scaleY="2"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.918"
+                    app:layout_constraintHorizontal_bias="0.999"
                     app:layout_constraintStart_toStartOf="@+id/ComeraghImage"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="MissingConstraints" />
@@ -666,7 +666,7 @@
                     android:scaleY="2"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.918"
+                    app:layout_constraintHorizontal_bias="0.999"
                     app:layout_constraintStart_toStartOf="@+id/CoumshingImage"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="MissingConstraints" />
@@ -740,7 +740,7 @@
                     android:scaleY="2"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.918"
+                    app:layout_constraintHorizontal_bias="0.999"
                     app:layout_constraintStart_toStartOf="@+id/SkelligImage"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="MissingConstraints" />
@@ -814,7 +814,7 @@
                     android:scaleY="2"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.918"
+                    app:layout_constraintHorizontal_bias="0.999"
                     app:layout_constraintStart_toStartOf="@+id/GallarusImage"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="MissingConstraints" />
@@ -888,7 +888,7 @@
                     android:scaleY="2"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.918"
+                    app:layout_constraintHorizontal_bias="0.999"
                     app:layout_constraintStart_toStartOf="@+id/DunloeImage"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="MissingConstraints" />
@@ -962,7 +962,7 @@
                     android:scaleY="2"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.918"
+                    app:layout_constraintHorizontal_bias="0.999"
                     app:layout_constraintStart_toStartOf="@+id/TemplemoreImage"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="MissingConstraints" />
@@ -1036,7 +1036,7 @@
                     android:scaleY="2"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.918"
+                    app:layout_constraintHorizontal_bias="0.999"
                     app:layout_constraintStart_toStartOf="@+id/AthasselImage"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="MissingConstraints" />
@@ -1110,7 +1110,7 @@
                     android:scaleY="2"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.918"
+                    app:layout_constraintHorizontal_bias="0.999"
                     app:layout_constraintStart_toStartOf="@+id/AherlowImage"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="MissingConstraints" />
@@ -1184,7 +1184,7 @@
                     android:scaleY="2"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.918"
+                    app:layout_constraintHorizontal_bias="0.999"
                     app:layout_constraintStart_toStartOf="@+id/TeranovaImage"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="MissingConstraints" />
@@ -1258,7 +1258,7 @@
                     android:scaleY="2"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.918"
+                    app:layout_constraintHorizontal_bias="0.999"
                     app:layout_constraintStart_toStartOf="@+id/GurImage"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="MissingConstraints" />
@@ -1332,7 +1332,7 @@
                     android:scaleY="2"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.918"
+                    app:layout_constraintHorizontal_bias="0.999"
                     app:layout_constraintStart_toStartOf="@+id/CurraghImage"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="MissingConstraints" />
@@ -1406,7 +1406,7 @@
                     android:scaleY="2"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.918"
+                    app:layout_constraintHorizontal_bias="0.999"
                     app:layout_constraintStart_toStartOf="@+id/DoolinImage"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="MissingConstraints" />
@@ -1452,7 +1452,7 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="10dp"
                     android:layout_marginRight="10dp"
-                    android:text="Dromore Nature Reserve"
+                    android:text="Dromore Woods"
                     android:textSize="22dp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -1480,7 +1480,7 @@
                     android:scaleY="2"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.918"
+                    app:layout_constraintHorizontal_bias="0.999"
                     app:layout_constraintStart_toStartOf="@+id/DromoreImage"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="MissingConstraints" />
@@ -1554,7 +1554,7 @@
                     android:scaleY="2"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.918"
+                    app:layout_constraintHorizontal_bias="0.999"
                     app:layout_constraintStart_toStartOf="@+id/LahinchImage"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="MissingConstraints" />

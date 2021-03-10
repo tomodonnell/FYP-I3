@@ -50,6 +50,30 @@ public class MyAdapterMunster extends RecyclerView.Adapter<MyAdapterMunster.Exam
                             intent = new Intent(context, Cork.class);
                             break;
 
+                        case 1:
+                            intent = new Intent(context, Cork.class);
+                            break;
+
+                        case 2:
+                            intent = new Intent(context, Waterford.class);
+                            break;
+
+                        case 3:
+                            intent = new Intent(context, Kerry.class);
+                            break;
+
+                        case 4:
+                            intent = new Intent(context, Tipperary.class);
+                            break;
+
+                        case 5:
+                            intent = new Intent(context, Limerick.class);
+                            break;
+
+                        case 6:
+                            intent = new Intent(context, Clare.class);
+                            break;
+
                         default:
                             intent = new Intent(context, Cork.class);
                             break;

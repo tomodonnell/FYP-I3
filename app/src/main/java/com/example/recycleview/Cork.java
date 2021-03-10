@@ -108,7 +108,7 @@ public class Cork extends AppCompatActivity {
                 "",
                 "Lough Hyne"));
 
-        corkItem.add(new Cork_Item(R.drawable.maplogo, R.drawable.garisland,
+        corkItem.add(new Cork_Item(R.drawable.maplogo, R.drawable.donwildlife,
                 "Doneraile Park, Cork",
                 "Visitor Infomation",
                 "The Park comprises approximately 166 hectares and is an outstanding " +
@@ -126,6 +126,21 @@ public class Cork extends AppCompatActivity {
                 "",
                 "Doneraile Park"));
 
+        corkItem.add(new Cork_Item(R.drawable.maplogo, R.drawable.ballycotton,
+                "Ballycotten Cliff, Cork",
+                "Visitor Infomation",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, " +
+                        "quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse " +
+                        "cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." ,
+                "Things To Do",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, " +
+                        "quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse " +
+                        "cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "Perfect for?",
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. " +
+                        "quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "",
+                "Ballycotten Cliff Walk"));
 
     }
 
