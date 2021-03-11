@@ -30,7 +30,7 @@ public class Munster extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_munster);
+        setContentView(R.layout.activity_attraction);
 
         createMunsterList();
         buildRecyclerView();

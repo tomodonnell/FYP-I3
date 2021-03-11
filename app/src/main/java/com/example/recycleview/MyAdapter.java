@@ -59,7 +59,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ExampleViewHolder>
                             break;
 
                         default:
-                            intent = new Intent(context, Attraction.class);
+                            intent = new Intent(context, Munster.class);
                             break;
                     }
                     context.startActivity(intent);

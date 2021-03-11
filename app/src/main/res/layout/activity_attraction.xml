@@ -6,9 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!--Adding an Edit Text box to allow the user to search-->
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search Here"
+        android:layout_margin="16dp"
+        android:visibility="gone"
+        android:layout_marginBottom="20dp"
+        tools:ignore="MissingConstraints" />
+
+    <!--Adding Recyclerview Layout, this will be populated by an array list and styled in a separate xml file-->
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
