@@ -5,7 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 public class HomePage extends AppCompatActivity {
 
@@ -13,6 +17,10 @@ public class HomePage extends AppCompatActivity {
 
     private ImageButton imageButtonProvince;
     private ImageButton imageButtonProgress;
+    Button btnLogout;
+    FirebaseAuth mFirebaseAuth;
+    private FirebaseAuth.AuthStateListener mAuthStateListener;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +29,17 @@ public class HomePage extends AppCompatActivity {
 
         imageButtonProvince = findViewById(R.id.ibtnMap);
         imageButtonProgress = findViewById(R.id.ibtnProgress);
+        btnLogout = findViewById(R.id.btnlogout);
+
+        btnLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+             FirebaseAuth.getInstance().signOut();
+             Intent intToLogin = new Intent (HomePage.this, Login.class);
+             startActivity(intToLogin);
+                Toast.makeText(HomePage.this, "You have successfully logged out", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         imageButtonProvince.setOnClickListener(new View.OnClickListener() {
             @Override

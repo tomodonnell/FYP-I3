@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
     //Creating array list
     private void createProvinceList() {
         provinceItem = new ArrayList<>();
-        provinceItem.add(new Province_Item(R.drawable.rsz_place, "", ""));
+        provinceItem.add(new Province_Item(R.drawable.rsz_udivisit, "", ""));
         provinceItem.add(new Province_Item(R.drawable.rsz_ireland, "Ireland", "Éire"));
         provinceItem.add(new Province_Item(R.drawable.rsz_munster, "Munster", "Mhumhain"));
         provinceItem.add(new Province_Item(R.drawable.rsz_leinster, "Leinster", "Laighin"));

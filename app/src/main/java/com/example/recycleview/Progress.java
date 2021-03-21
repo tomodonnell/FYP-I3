@@ -132,7 +132,7 @@ public class Progress extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 saveData();
-                Toast.makeText(getBaseContext(), "Your Progress has been Updated!" , Toast.LENGTH_SHORT ).show();
+                Toast.makeText(getBaseContext(), "Your Progress has been Updated" , Toast.LENGTH_SHORT ).show();
                 moveBackHome();
             }
         });
