@@ -46,3 +46,14 @@ THIRD PARTY COMPONENTS
    Copyright: Sabith Pkc Mnr
    Url: https://www.youtube.com/watch?v=NdtE_1u0cq4
    Details: Creating a button that allows us to share specific content from our application.
+
+8. Component: Determinate Progress bar design
+   Copyright: Coding in Flow
+   Url: https://www.youtube.com/watch?v=YsHHXg1vbcc
+   Details: Design for the applications progress bar is based on this tutorial.
+
+9. Component: Login and Sign Up functions
+   Copyright: EasyLearn
+   Url: https://www.youtube.com/watch?v=V0ZrnL-i77Q
+   Details: Creating login and sign up functionally and storing the information in a Firebase Database.
+   Tutorial also includes guide to setting up a database using Firebase.

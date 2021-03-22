@@ -19,6 +19,9 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class Login extends AppCompatActivity {
 
+    //This Java class is used to implement login functionality, using a Firebase Database
+    //It is based on an "EasyLearn" Youtube tutorial - //www.youtube.com/watch?v=V0ZrnL-i77Q
+
     EditText emailID, password;
     Button btnLogin;
     TextView signUp;
